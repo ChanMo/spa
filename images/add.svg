@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64px"
+   height="64px"
+   id="svg2985"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="New document 2">
+  <defs
+     id="defs2987" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.75"
+     inkscape:cx="35.210946"
+     inkscape:cy="27.218129"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     inkscape:window-width="727"
+     inkscape:window-height="421"
+     inkscape:window-x="505"
+     inkscape:window-y="222"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2997" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata2990">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <path
+       sodipodi:type="arc"
+       style="fill:#1ab5ac;fill-opacity:1;fill-rule:nonzero;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path2993"
+       sodipodi:cx="31.454546"
+       sodipodi:cy="33.81818"
+       sodipodi:rx="31.818182"
+       sodipodi:ry="32.421055"
+       d="m 63.272728,33.81818 a 31.818182,32.421055 0 1 1 -63.63636402,0 31.818182,32.421055 0 1 1 63.63636402,0 z"
+       transform="matrix(1,0,0,0.98701299,0.72727276,-1.3789846)" />
+    <rect
+       style="fill:#ffffff"
+       id="rect2995"
+       width="60.727276"
+       height="5.818182"
+       x="1.4545455"
+       y="29.09091" />
+    <rect
+       style="fill:#ffffff"
+       id="rect2995-6"
+       width="60.727276"
+       height="5.818182"
+       x="1.1818175"
+       y="-35.000004"
+       transform="matrix(0,1,-1,0,0,0)" />
+  </g>
+</svg>
