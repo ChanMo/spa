@@ -8,7 +8,7 @@
   <title>Qing</title>
 
   <!-- If you are using the gem version, you need this only -->
-  <link ref="icon" href="favicon.ico">
+  <link href="favicon.ico">
   <link rel="apple-touch-icon" href="favicon.ico">
   <link rel="stylesheet" href="../foundation/css/app.css">
 
@@ -39,17 +39,34 @@
     </section>
   </nav>
   <div id="main">
-    <a id="add-icon" href="step1.html">
-      <img src="images/add.svg">
-    </a>
+    <ul id="step">
+      <li class="active"><span class="step-item">1</span><span class="step-line"></span></li>
+      <li><span class="step-item">2</span><span class="step-line"></span></li>
+      <li><span class="step-item">3</span><span class="step-line"></span></li>
+      <li><span class="step-item">4</span></li>
+    </ul>
+    <div id="work">
+      <h2>Choice Your Template</h2>
+      <div class="row">
+        <div class="large-4 columns">
+          <img src="images/mobile.png">
+        </div>
+        <div class="large-4 columns">
+          <img src="images/mobile.png">
+        </div>
+        <div class="large-4 columns">
+          <img src="images/mobile.png">
+        </div>
+      </div>
+
+      <a href="step2.html" class="button">Submit</a>
+    </div>
   </div>
 
   <!-- body content here -->
 
   <script src="../foundation/bower_components/jquery/dist/jquery.js"></script>
   <script src="../foundation/bower_components/foundation/js/foundation.min.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
+  <script src="js/app.js"></script>
 </body>
 </html>

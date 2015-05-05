@@ -8,10 +8,11 @@
   <title>Qing</title>
 
   <!-- If you are using the gem version, you need this only -->
-  <link ref="icon" href="favicon.ico">
+  <link href="favicon.ico">
   <link rel="apple-touch-icon" href="favicon.ico">
   <link rel="stylesheet" href="../foundation/css/app.css">
-
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/wysiwyg-editor.css" />
   <script src="../foundation/bower_components/modernizr/modernizr.js"></script>
 
 </head>
@@ -39,17 +40,30 @@
     </section>
   </nav>
   <div id="main">
-    <a id="add-icon" href="step1.html">
-      <img src="images/add.svg">
-    </a>
+    <ul id="step">
+      <li><span class="step-item">1</span><span class="step-line"></span></li>
+      <li class="active"><span class="step-item">2</span><span class="step-line"></span></li>
+      <li><span class="step-item">3</span><span class="step-line"></span></li>
+      <li><span class="step-item">4</span></li>
+    </ul>
+    <div id="work">
+      <h2>Fill your content</h2>
+      <div id="onepage">
+        <textarea class="content">
+        </textarea>
+        <input type="file" id="upload-image-input" accept="image/*" style="display:none" onchange="handleFiles(this.files)">
+        <a href="#" id="upload-image">Select one image</a>
+      </div>
+      <a href="step2.html" class="button">Submit</a>
+    </div>
   </div>
 
   <!-- body content here -->
 
   <script src="../foundation/bower_components/jquery/dist/jquery.js"></script>
   <script src="../foundation/bower_components/foundation/js/foundation.min.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
+  <script type="text/javascript" src="js/wysiwyg.js"></script>
+  <script type="text/javascript" src="js/wysiwyg-editor.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
