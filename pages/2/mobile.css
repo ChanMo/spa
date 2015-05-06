@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Avenir, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background: #000;
+}
+.section > img {
+    width: 100%;
+    height: auto;
+}
+#footer {
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    animation: myfirst 2s infinite;
+    -moz-animation: myfirst 2s infinite;
+    -webkit-animation: myfirst 2s infinite;	/* Safari 和 Chrome */
+    -o-animation: myfirst 2s infinite;	/* Opera */
+}
+@keyframes myfirst
+{
+from {bottom: 0;opacity:0}
+to {bottom: 3px;opacity:1}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {bottom: 0;opacity:0}
+to {bottom: 3px;opacity:1}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+from {bottom: 0;opacity:0;}
+to {bottom: 3px;opacity:1;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {bottom: 0;opacity:0;}
+to {bottom: 3px;opacity:1;}
+}
+
+#footer > span {
+    color: #ddd;
+    font-size: 2.5em;
+    font-weight: 900;
+}

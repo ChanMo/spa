@@ -2,17 +2,28 @@ $(document).foundation(
 );
 
 $(function(){
+
+  /** set height **/
+  $("#main").css({"height":window.innerHeight-45+"px", "max-height":window.innerHeight-45+"px"});
+
+
+  /** make qrcode **/
+  var qrcode_link = $("#qrcode").data("link");
+  $("#qrcode").qrcode(qrcode_link);
+
+  /** select the template **/
   $("#work").find(".columns").click(function(){
     $(this).siblings(".columns").removeClass("active");
     $(this).addClass("active");
   });
 
-  /** upload image **/
+  /** make link for upload image **/
   $("#upload-image").click(function(e){
-    $("#upload-image-input").click();
+    $("#image1").click();
     e.preventDefault();
   });
 
+  /** make the wysiwyg edit **/
   $(".content").wysiwyg({
     toolbar: 'selection',
     // 'selection'|'top'|'top-selection'|'bottom'|'bottom-selection'
@@ -50,6 +61,14 @@ $(function(){
 
 });
 
+/** test xml **/
+function readXml(){
+  xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("GET", "1.xml", false);
+  xmlhttp.send();
+  xmlDoc = xmlhttp.responseXML;
+  //alert(xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue);
+}
 
 /** upload file **/
 function handleFiles(files){
