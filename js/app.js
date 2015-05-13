@@ -23,6 +23,16 @@ $(function(){
     e.preventDefault();
   });
 
+  /** make link for color picker **/
+  $("#color_picker").click(function(){
+    $("#color").click();
+    e.preventDefault();
+  });
+  $("#color").change(function(){
+    var color = $(this).val();
+    $("#onepage").css("background-color", color);
+  });
+
   /** make the wysiwyg edit **/
   $(".content").wysiwyg({
     toolbar: 'selection',
