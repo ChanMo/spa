@@ -24,13 +24,27 @@ $(function(){
   });
 
   /** make link for color picker **/
+  $("#onepage").find("div").load('../templates/base/edit.html', function(){
+    var length = $("#onepage .page").length;
+    var i = 1;
+    var html = '';
+    for(i; i<=length; i++){
+      html += '<li>'+i+'</li>';
+    }
+    $("#page_index").html(html);
+    page_init();
+  });
+  var position = $("#onepage").find("div").position();
+  $("#page_tool").css({left:position.left+400,top:position.top});
+  $("#page_index").css({left:position.left-40,top:position.top});
+
   $("#color_picker").click(function(){
     $("#color").click();
     e.preventDefault();
   });
   $("#color").change(function(){
     var color = $(this).val();
-    $("#onepage").css("background-color", color);
+    $("#onepage").find(".page:visible").css("background-color", color);
   });
 
   /** make the wysiwyg edit **/
@@ -85,9 +99,17 @@ function handleFiles(files){
   var file = files[0];
   var img = document.createElement("img");
   img.file = file;
-  $("#upload-image").remove();
-  $("#onepage").append(img);
+  //$("#upload-image").remove();
+  $("#onepage").find(".page:visible").html(img);
   var reader = new FileReader();
   reader.onload = (function(aImg) { return function(e) { aImg.src = e.target.result; }; })(img);
   reader.readAsDataURL(file);
+}
+
+function page_init(){
+  $("#page_index").find("li").click(function(){
+    var index = $(this).index();
+    $("#onepage").find(".page").hide();
+    $("#onepage").find(".page:eq("+index+")").show();
+  });
 }

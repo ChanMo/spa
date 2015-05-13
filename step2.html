@@ -50,12 +50,26 @@
       <form method="post" action="send.php" enctype="multipart/form-data">
         <h2>Fill your content</h2>
         <div id="onepage">
-          <input type="color" id="color" name="color">
-          <a href="#" id="color_picker">Choice the background color</a>
-          <textarea class="content" id="content" name="content">
-          </textarea>
-          <input type="file" id="image1" name="image1" accept="image/*" style="display:none" onchange="handleFiles(this.files)">
-          <a href="#" id="upload-image">Select one image</a>
+          <div>
+            <!-- <input type="color" id="color" name="color"> -->
+            <!-- <a href="#" id="color_picker">Choice the background color</a> -->
+            <!-- <textarea class="content" id="content" name="content"> -->
+            <!-- </textarea> -->
+            <!-- <input type="file" id="image1" name="image1" accept="image/*" style="display:none" onchange="handleFiles(this.files)"> -->
+            <!-- <a href="#" id="upload-image">Select one image</a> -->
+          </div>
+        </div>
+        <ul id="page_index">
+        </ul>
+        <div id="page_tool">
+          <div>
+            <input type="color" id="color" name="color">
+            color
+          </div>
+          <div>
+            <input type="file" id="image1" name="image1" accept="image/*" style="display:none" onchange="handleFiles(this.files)">
+            <a href="#" id="upload-image">image</a>
+          </div>
         </div>
         <button class="button" type="submit">Submit</button>
       </form>
