@@ -23,3 +23,7 @@ target/
 
 #sass cache
 .sass-cache/
+
+pages/
+stylesheets/
+uploads/
